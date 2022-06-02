@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>editperfil</title>
+	<link href="styles.css" rel="stylesheet" type="text/css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Troupe</title>
+</head>
+
+<body>
+	<main>
+	<form method="post" action="" target="_blank" enctype="text/plain" >
+		<div>
+			<p>Datos Personales</p>
+			<label for="Nombre">Nombre</label>
+			<input type="text" name="Nombre" id="nombre" maxlength="40" placeholder="Ingrese nombre completo" required>
+			
+			<label for="Email">Email</label>
+			<input type="email" name="Email" id="email" placeholder="Ingrese email" required>
+			
+			<label for="Edad">Edad</label>
+			<input type="number" name="Edad" id="edad" min="18" max="99" required>
+			
+			<label for="Nacimiento">Fecha de nacimiento </label>
+			<input type="date" name="Nacimiento" id="Nacimiento">
+			
+			<label for="Twitter">Twitter</label>
+			<input type="text" name="Twitter" id="twitter" placeholder="@">
+			
+			<label for="Instagram">Instagram</label>
+			<input type="text" name="Instagram" id="instagram" placeholder="@">
+			
+			<label for="Provincia">Provincia</label>
+			<select name="Provincia">
+				<option value="value1" selected>Buenos Aires</option>
+				<option value="value2">Chaco</option>
+				<option value="value3">Córdoba</option>
+				<option value="value1">La Pampa</option>
+				<option value="value2">Mendoza</option>	
+			</select>
+			
+			<label for="Ciudad">Provincia</label>
+			<select name="Ciudad">
+				<option value="value1" selected>Avellaneda</option>
+				<option value="value2">Bandfield</option>
+				<option value="value3">CABA</option>
+				<option value="value1">Ezeiza</option>
+				<option value="value2">La Plata</option>	
+			</select>	
+		</div>
+		
+		<div>
+		<p>¿Contas con una compañía para el festival?</p>
+		<label for="compania"> Si <input type="radio" name="compania" value="Si" class="si"></label>
+		<label for="compania"> No <input type="radio" name="compania" value="No" class="no"></label>
+		
+		<p>¿Contas con espacio displonible en tu vivienda?</p>
+		<label for="hospedaje"> Si <input type="radio" name="hospedaje" value="Si" class="si"></label>
+		<label for="hospedaje"> No <input type="radio" name="hospedaje" value="No" class="no"></label>
+		
+		<p>¿Contas con espacio displonible en tu vehículo?</p>
+		<label for="transporte"> Si <input type="radio" name="transporte" value="Si" class="si"></label>
+		<label for="transporte"> No <input type="radio" name="transporte" value="No" class="no"></label>
+		
+		<p> Géneros musicales </p>
+		<label for="generos"> Rock <input type="checkbox" name="generos" value="Rock" id="rock"></label>
+		<label for="generos"> Pop <input type="checkbox" name="generos" value="Pop" id="pop"></label>
+		<label for="generos"> Rap <input type="checkbox" name="generos" value="Rap" id="rap"></label>
+		<label for="generos"> Reggaeton <input type="checkbox" name="generos" value="Reggaeton" id="reggaeton"></label>
+			
+		<p> Artistas </p>
+		<label for="generos"> No te va a gustar <input type="checkbox" name="generos" value="No te va a gustar" id="ntvg"></label>
+		<label for="generos"> Las Pelotas <input type="checkbox" name="generos" value="Las Pelotas" id="lp"></label>
+		<label for="generos"> Catupecu Machu <input type="checkbox" name="generos" value="Catupecu Macu" id="cm"></label>
+		<label for="generos"> El cuarteto de Nos <input type="checkbox" name="generos" value="El cuarteto de Nos" id="ecdn"></label>	
+			
+		<label for="Otros">Otros </label>
+		<textarea name="Otros" id="otros" maxlength="150" placeholder="Breve descripcion de sus gustos"></textarea>
+		
+		<input type="reset" value="Borrar" class="borrar">
+		<input type="submit" value="Comenzá tu experiencia Troupe" class="comenzar">
+			
+		</div>
+		
+		
+	</form>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	</main>	
+	
+	
+	
+</body>
+</html>
