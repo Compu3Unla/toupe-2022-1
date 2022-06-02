@@ -119,6 +119,38 @@ h2 {
 	padding-right:20px;
 }
 
+.contenedor-perfiles{
+	display:flex;
+	padding: 40px;
+	justify-content: center;
+}
+
+.perfiles {
+	background-color:#252222;
+	height: 700px;
+	padding: 20px;
+}
+
+.contenedor-perfiles article {
+	background-color:#F4F4F4;
+	padding: 40px;
+	margin: 0px 20px 0px 20px;
+	
+}
+
+.contenedor-perfiles h4 {
+	padding-bottom: 20px;
+	
+}
+
+.botones-perfil {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top: 5px;
+	
+}
+
 h2 {
 	color: #7F3AEE;
 	padding-top: 15px;
@@ -162,12 +194,20 @@ h3 {
 	color: #F4F4F4;
 }
 
-.boton h2 {
+.boton h2{
 	background-color: #F4F4F4;
 	border: 3px solid #7F3AEE;
 	max-width: 300px;
 	border-radius: 10px;
 	padding: 12px 16px;
+}
+.boton h4{
+	background-color: #F4F4F4;
+	border: 3px solid #7F3AEE;
+	max-width: 300px;
+	border-radius: 10px;
+	padding: 5px 10px;
+	color: #7F3AEE;
 }
 
 .boton {
@@ -176,3 +216,6 @@ h3 {
 	padding: 30px;
 }
 
+.botones-perfil .boton {
+	padding: 8px;
+}

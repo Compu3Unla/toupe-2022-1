@@ -9,6 +9,15 @@
 </head>
 
 <body>
+	<header>
+		<a class="botoni" href="home.html"> <img src="img/logo.svg" width="auto" height="40" alt="logo Troupe"/></a>
+		<nav class="botonesd">
+			<a class="botonhome" href="home.html" target="_self">Home</a>
+			<!--sobre troupe???-->
+			<a href="mi-perfil.html" target="_self">
+			<img src="img/iconoperfil.svg" width="36" height="36" alt="icono perfil"/></a>
+		</nav>
+	</header>
 	<main>
 	<form method="post" action="" target="_blank" enctype="text/plain" >
 		<div>
@@ -40,10 +49,10 @@
 				<option value="value2">Mendoza</option>	
 			</select>
 			
-			<label for="Ciudad">Provincia</label>
+			<label for="Ciudad">Ciudad</label>
 			<select name="Ciudad">
 				<option value="value1" selected>Avellaneda</option>
-				<option value="value2">Bandfield</option>
+				<option value="value2">Banfield</option>
 				<option value="value3">CABA</option>
 				<option value="value1">Ezeiza</option>
 				<option value="value2">La Plata</option>	
@@ -51,35 +60,36 @@
 		</div>
 		
 		<div>
-		<p>¿Contas con una compañía para el festival?</p>
-		<label for="compania"> Si <input type="radio" name="compania" value="Si" class="si"></label>
-		<label for="compania"> No <input type="radio" name="compania" value="No" class="no"></label>
-		
-		<p>¿Contas con espacio displonible en tu vivienda?</p>
-		<label for="hospedaje"> Si <input type="radio" name="hospedaje" value="Si" class="si"></label>
-		<label for="hospedaje"> No <input type="radio" name="hospedaje" value="No" class="no"></label>
-		
-		<p>¿Contas con espacio displonible en tu vehículo?</p>
-		<label for="transporte"> Si <input type="radio" name="transporte" value="Si" class="si"></label>
-		<label for="transporte"> No <input type="radio" name="transporte" value="No" class="no"></label>
-		
-		<p> Géneros musicales </p>
-		<label for="generos"> Rock <input type="checkbox" name="generos" value="Rock" id="rock"></label>
-		<label for="generos"> Pop <input type="checkbox" name="generos" value="Pop" id="pop"></label>
-		<label for="generos"> Rap <input type="checkbox" name="generos" value="Rap" id="rap"></label>
-		<label for="generos"> Reggaeton <input type="checkbox" name="generos" value="Reggaeton" id="reggaeton"></label>
-			
-		<p> Artistas </p>
-		<label for="generos"> No te va a gustar <input type="checkbox" name="generos" value="No te va a gustar" id="ntvg"></label>
-		<label for="generos"> Las Pelotas <input type="checkbox" name="generos" value="Las Pelotas" id="lp"></label>
-		<label for="generos"> Catupecu Machu <input type="checkbox" name="generos" value="Catupecu Macu" id="cm"></label>
-		<label for="generos"> El cuarteto de Nos <input type="checkbox" name="generos" value="El cuarteto de Nos" id="ecdn"></label>	
-			
-		<label for="Otros">Otros </label>
-		<textarea name="Otros" id="otros" maxlength="150" placeholder="Breve descripcion de sus gustos"></textarea>
-		
-		<input type="reset" value="Borrar" class="borrar">
-		<input type="submit" value="Comenzá tu experiencia Troupe" class="comenzar">
+			<p>¿Contas con una compañía para el festival?</p>
+			<label for="compania"> Si <input type="radio" name="compania" value="Si" class="si"></label>
+			<label for="compania"> No <input type="radio" name="compania" value="No" class="no"></label>
+
+			<p>¿Contas con espacio displonible en tu vivienda?</p>
+			<label for="hospedaje"> Si <input type="radio" name="hospedaje" value="Si" class="si"></label>
+			<label for="hospedaje"> No <input type="radio" name="hospedaje" value="No" class="no"></label>
+
+			<p>¿Contas con espacio displonible en tu vehículo?</p>
+			<label for="transporte"> Si <input type="radio" name="transporte" value="Si" class="si"></label>
+			<label for="transporte"> No <input type="radio" name="transporte" value="No" class="no"></label>
+
+			<!--ver en grupo-->
+			<p> Géneros musicales </p>
+			<label for="generos"> Rock <input type="checkbox" name="generos" value="Rock" id="rock"></label>
+			<label for="generos"> Pop <input type="checkbox" name="generos" value="Pop" id="pop"></label>
+			<label for="generos"> Rap <input type="checkbox" name="generos" value="Rap" id="rap"></label>
+			<label for="generos"> Reggaeton <input type="checkbox" name="generos" value="Reggaeton" id="reggaeton"></label>
+
+			<p> Artistas </p>
+			<label for="generos"> No te va gustar <input type="checkbox" name="generos" value="No te va a gustar" id="ntvg"></label>
+			<label for="generos"> Las Pelotas <input type="checkbox" name="generos" value="Las Pelotas" id="lp"></label>
+			<label for="generos"> Catupecu Machu <input type="checkbox" name="generos" value="Catupecu Macu" id="cm"></label>
+			<label for="generos"> El cuarteto de Nos <input type="checkbox" name="generos" value="El cuarteto de Nos" id="ecdn"></label>	
+
+			<label for="Otros">Otros </label>
+			<textarea name="Otros" id="otros" maxlength="150" placeholder="Breve descripcion de sus gustos"></textarea>
+
+			<input type="reset" value="Borrar" class="borrar">
+			<input type="submit" value="Comenzá tu experiencia Troupe" class="comenzar">
 			
 		</div>
 		
@@ -96,8 +106,23 @@
 	
 	
 	</main>	
-	
-	
-	
+	<footer>
+		<div class="newsletter">
+			<p>¡Suscribite a nuestro newsletter!</p>
+			<input id="newsletter" name="newsletter" placeholder= "">
+			<!-- 	<img src="img/iconoflecha.svg" width="26" height="auto" alt="flecha"/> -->
+		</div>
+		<ul>
+			<li> ©2022 Troupe </li>
+			<li> T&eacute;rminos y condiciones </li>
+			<li> Pol&iacute;tica de privacidad </li>
+			<li> Ayuda </li>
+		</ul>
+		<div class="redes">
+			<img src="img/instagram.svg" width="26" height="26" alt="instgram"/> 
+			<img src="img/facebook.svg" width="26" height="26" alt="facebook"/> 
+			<img src="img/twitter.svg" width="26" height="26" alt="twitter"/> 
+		</div>
+	</footer>
 </body>
 </html>
