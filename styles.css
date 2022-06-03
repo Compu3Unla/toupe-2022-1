@@ -176,3 +176,93 @@ h3 {
 	padding: 30px;
 }
 
+form h2 {
+	color: #7F3AEE;
+	font-size: 1.5em;
+	text-align: left
+	
+}
+
+form p {
+	margin-left: 15px;
+	
+}
+form {
+	width:100%;
+	height: auto;
+	background-color: #F4F4F4;
+	display: flex;
+	flex-wrap: wrap;
+	
+}
+
+form div {
+	width: 40%;
+	height:auto;
+	padding:30px;
+	
+	
+}
+
+
+label {
+	display:block;
+	height: 25px;
+	padding-left: 15px;
+	
+	}
+
+input {
+	width:295px;
+	height: 20px;
+	background-color: #E5E5E5;
+	margin: 0px 0px 0px 15px;
+	border-radius: 15px; 
+	padding: 4px 0px 4px 10px;
+	
+}
+
+.boton {
+	background-color: #E5E5E5;
+	color: white;
+	padding: 16px;
+	margin-left: 15px;  
+	font-size: 16px;
+	border-radius:10px;
+	width: 290px !important;
+	border: none;
+  
+}
+
+.drop {
+	position: relative;
+	display: inline-block;
+	
+}
+
+.bajada {
+ 	display: none;
+ 	position: absolute;
+	width: 290px !important;
+ 	border-radius: 10px;
+	background-color: #E5E5E5;
+	margin-left: 15px;
+	min-width: 160px;
+	z-index: 1;
+}
+
+.bajada a {
+	color: black;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+
+.bajada a:hover {
+	background-color: #66CC99;
+	border-radius: 10px;
+}
+
+.drop:hover .bajada {
+	display: block;
+}

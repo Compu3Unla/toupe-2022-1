@@ -10,9 +10,10 @@
 
 <body>
 	<main>
-	<form method="post" action="" target="_blank" enctype="text/plain" >
-		<div>
-			<p>Datos Personales</p>
+	
+	<form method="post" action="" target="_blank" enctype="text/plain" >	
+		<div>			
+			<h2>Datos Personales</h2>
 			<label for="Nombre">Nombre</label>
 			<input type="text" name="Nombre" id="nombre" maxlength="40" placeholder="Ingrese nombre completo" required>
 			
@@ -31,23 +32,29 @@
 			<label for="Instagram">Instagram</label>
 			<input type="text" name="Instagram" id="instagram" placeholder="@">
 			
-			<label for="Provincia">Provincia</label>
-			<select name="Provincia">
-				<option value="value1" selected>Buenos Aires</option>
-				<option value="value2">Chaco</option>
-				<option value="value3">Córdoba</option>
-				<option value="value1">La Pampa</option>
-				<option value="value2">Mendoza</option>	
-			</select>
-			
-			<label for="Ciudad">Provincia</label>
-			<select name="Ciudad">
-				<option value="value1" selected>Avellaneda</option>
-				<option value="value2">Bandfield</option>
-				<option value="value3">CABA</option>
-				<option value="value1">Ezeiza</option>
-				<option value="value2">La Plata</option>	
-			</select>	
+			<p> Provincia </p>
+			<section class="drop">
+  			<button class="boton"></button>
+  				<article class="bajada">
+					<a href="#">Buenos Aires</a>
+					<a href="#">Chaco</a>
+					<a href="#">Córdoba</a>
+					<a href="#">La Pampa</a>
+					<a href="#">Santa Fe</a>
+				</article>
+			</section>                
+		
+			<p> Ciudad </p>
+			<section class="drop">
+            <button class="boton"></button>
+  				<article class="bajada">
+   					<a href="#">Avellaneda</a>
+					<a href="#">Bandfield</a>
+					<a href="#">CABA</a>
+					<a href="#">Ezeiza</a>
+					<a href="#">La Plata</a>
+				</article>
+			</section>
 		</div>
 		
 		<div>
@@ -79,9 +86,10 @@
 		<textarea name="Otros" id="otros" maxlength="150" placeholder="Breve descripcion de sus gustos"></textarea>
 		
 		<input type="reset" value="Borrar" class="borrar">
-		<input type="submit" value="Comenzá tu experiencia Troupe" class="comenzar">
-			
+		<input type="submit" value="Comenzá tu experiencia Troupe" class="comenzar">	
 		</div>
+		
+		
 		
 		
 	</form>
