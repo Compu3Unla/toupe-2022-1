@@ -118,6 +118,11 @@ h2 {
 .contenedor-filtros img {
 	padding-left:20px;
 	padding-right:20px;
+	
+}
+
+.contenedor-filtros :hover img {
+	transform: scale(1.1);
 }
 
 .contenedor-perfiles{
