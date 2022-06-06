@@ -25,6 +25,49 @@ header {
 	box-sizing: border-box;
 }
 
+/*galería de imágenes*/
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+.mySlides {
+  display: none;
+}
+
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 15px 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition:  0.6s ease;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+.galeria {
+	padding: 30px;
+}
+
+.active, .dot:hover {
+  background-color: #66CC99;
+}
+
+/*fin galeria*/
+
 .botonesd a {
 	text-decoration: none;
 	color: #F4F4F4;
@@ -191,7 +234,7 @@ h2 {
 
 .contenedor-comentarios article {
 	width:22%;
-	background-color: #E5E5E5;
+	background-color: #F4F4F4;
 	padding: 20px;
 	display:flex; 
 	align-items: flex-start;
@@ -206,6 +249,11 @@ h2 {
 
 .comentarios {
 	padding: 20px 0px 40px 0px;
+	background-color: #66CC99;
+}
+
+.comentarios h2 {
+	color: #F4F4F4;
 }
 
 p {
@@ -214,11 +262,26 @@ p {
 	line-height: 1.25em;
 }
 
+.videos {
+	display:flex;
+	flex-direction: row;
+	padding: 20px 0px 40px 0px;
+	
+}
+
+.videos article {
+	padding:10px 30px;
+}
+
+.videos article iframe {
+	padding: 18px;
+}
+
 
 h2 {
 	color: #7F3AEE;
 	padding-top: 15px;
-	font-weight: 600;
+	font-weight: 500;
 }
 
 article h5 {
@@ -374,4 +437,6 @@ input {
 
 .drop:hover .bajada {
 	display: block;
-	}
+}
+
+

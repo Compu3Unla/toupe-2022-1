@@ -1,9 +1,10 @@
 <!doctype html>
-<html>
+<html lang="en">
 <head>
 	<meta charset="utf-8">
 	<link href="styles.css" rel="stylesheet" type="text/css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
 <title>Troupe</title>
 </head>
 
@@ -18,8 +19,31 @@
 		</nav>
 	</header>
 	<main>
+		<section class="galeria">
+			<div class="slideshow-container">
+				<div class="mySlides fade">
+					<img src="img/galeria/galeria1.png" style="width:100%" alt="lollapalooza">
+				</div>
+			</div>
+			<div class="slideshow-container">
+				<div class="mySlides fade">
+					<img src="img/galeria/galeria2.png" style="width:100%" alt="quilmesrock">
+				</div>
+			</div>
+				<div class="slideshow-container">
+				<div class="mySlides fade">
+					<img src="img/galeria/galeria3.png" style="width:100%" alt="summersound">
+				</div>
+			</div>
+			<div style="text-align:center">
+				<span class="dot" onclick="currentSlide(1)"></span>
+				<span class="dot" onclick="currentSlide(2)"></span>
+				<span class="dot" onclick="currentSlide(3)"></span>
+			</div>
+		</section>
+ 
 		<!--falta slider-->
-	  <section class="perfiles">
+		<section class="perfiles">
 			<h2>Perfiles que podr&iacute;an interesarte</h2>
 			<div class="contenedor-perfiles">
 				<article>
@@ -89,6 +113,16 @@
 				</article>
 			</div>
 		</section>
+		<section class="videos">
+			<article>
+				<h2> Reviví el show de Wos en el Lollapalooza 2022 </h2>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/J-jSoHgIXKA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</article>
+			<article>
+				<h2> Mirá el line up del Primavera Sound BA 2022</h2>
+				<iframe width="560" height="315" src="https://www.youtube.com/embed/nFTWfvWgL8w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</article>
+		</section>
 		<section class="comentarios">
 			<h2> Experiencia de otros Troupers</h2>
 			<div class="contenedor-comentarios">
@@ -137,5 +171,6 @@
 			<img src="img/twitter.svg" width="26" height="26" alt="twitter"/> 
 		</div>
 	</footer>
+	<script src="galeria.js"></script>
 </body>
 </html>
