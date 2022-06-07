@@ -6,6 +6,7 @@
 *{
 	margin: 0px;
 	padding: 0px;
+	box-sizing: border-box;
 }
 
 body {
@@ -25,7 +26,21 @@ header {
 	box-sizing: border-box;
 }
 
+/* slider provincias */
+.slider {
+	position: relative;
+}
 
+.slider-container {
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.item {
+	user-select: all;
+}
 
 /*fin slider provincias*/
 
@@ -80,6 +95,7 @@ header {
 
 .botonhome:hover {
 	color: #66CC99;
+	font-weight: 600;
 }
 
 nav {
@@ -161,7 +177,6 @@ h2 {
 	justify-content: center;
 }
 
-
 .contenedor-filtros img {
 	padding-left:20px;
 	padding-right:20px;
@@ -172,21 +187,16 @@ h2 {
 	transform: scale(1.1);
 }
 
-.contenedor-provincias {
+.slider-container {
 	display:flex;
 	padding: 20px;
 	justify-content: center;
 }
 
-
-.contenedor-provincias img {
+.slider-container img {
 	padding-left:20px;
 	padding-right:20px;
 	
-}
-
-.contenedor-provincias :hover img {
-	transform: scale(1.1);
 }
 
 .contenedor-perfiles{
@@ -328,6 +338,7 @@ h3 {
 	padding: 15px 0px 8px 0px;
 	font-weight: 600;
 	font-size: 1.3em;
+	margin: 0px;
 }
 
 .busqueda {
