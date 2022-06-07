@@ -42,6 +42,7 @@ header {
 	user-select: all;
 }
 
+
 /*fin slider provincias*/
 
 /*galería de imágenes*/
@@ -81,7 +82,7 @@ header {
 	padding: 30px;
 }
 
-.active, .dot:hover {
+.galeria .active, .dot:hover {
   background-color: #66CC99;
 }
 
@@ -344,11 +345,9 @@ h3 {
 .busqueda {
 	background-color: #7F3AEE;
 	height: 450px;
-}
-
-.busqueda {
 	color: #F4F4F4;
 }
+
 
 .busqueda h2 {
 	color:#F4F4F4;
