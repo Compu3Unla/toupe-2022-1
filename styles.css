@@ -243,11 +243,12 @@ h2 {
 	display:flex;
 	padding: 40px 0;
 	justify-content: center;
+	flex-wrap: wrap;
 }
 
 .perfiles {
 	height: 750px;
-	padding: 20px;
+	margin-top: 20px;
 	background-color: #7F3AEE;
 	display: flex;
 	flex-direction: column;
@@ -256,6 +257,7 @@ h2 {
 
 .perfiles-solos {
 	background-color: #E5E5E5;
+	padding-top: 30px; 
 }
 
 .contenedor-perfiles article {
@@ -263,7 +265,12 @@ h2 {
 	padding: 30px;
 	margin: 0px 20px 0px 20px;
 	color: #F4F4F4;
+	
 	}
+
+.perfiles-solos .contenedor-perfiles article {
+	margin-bottom:40px;
+}
 
 .contenedor-perfiles article h5 {
 	color: #7F3AEE;
@@ -402,7 +409,7 @@ h3 {
 
 .busqueda {
 	background-color: #7F3AEE;
-	height: 450px;
+	height: auto;
 	color: #F4F4F4;
 }
 
@@ -415,6 +422,9 @@ h3 {
 	color: #F4F4F4;
 }
 
+.festivales, .busqueda, .provincias {
+	padding: 30px 0px 20px 0px;
+}
 .boton a {
 	text-decoration: none;
 }
@@ -533,4 +543,85 @@ input {
 	display: block;
 }
 
+@media screen and (max-width: 600px){
+	
+	main {
+		font-size: 1.2em;
+		
+	}
+	
+	header {
+		font-size: 1.2em;
+	}
 
+	.contenedor-perfiles {
+		flex-direction: row;
+	}
+
+	.perfiles {
+		height: auto;
+		padding: 30px 0px 30px 0px;
+	}
+
+	.contenedor-perfiles article {
+		width: 40%;
+		margin-bottom: 40px;
+	}
+	.contenedor-perfiles article img {
+		width: 100%;
+
+	}
+	.galeria {
+		padding-bottom: 0px;
+	}	
+
+	.videos {
+		flex-direction: column;
+		
+	}
+	.videos h2 {
+		max-width: 400px;
+		line-height: 1.3em;
+	}
+
+	.contenedor-comentarios article {
+		width:50%;
+
+	}	
+	.newsletter {
+		display: none;
+	}
+
+	footer ul li {
+		padding:6px;
+		width: 50%;
+	}	
+
+	footer ul {
+		width: 55%;
+		flex-wrap: wrap;
+
+	}
+	.redes {
+		padding: 0;
+		width: 25%;
+	}
+	.redes img {
+		padding: 0;
+		width: 32%;
+	}
+
+	.contenedor-filtros {
+		flex-direction: column;
+	}	
+	.contenedor-filtros img{
+		width: 70%;
+		margin-top: 40px;
+	}
+	.busqueda article h5 {
+		min-width: 300px;
+}
+	
+}
+
+	
