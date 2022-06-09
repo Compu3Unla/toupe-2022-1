@@ -465,19 +465,16 @@ form p {
 }
 form {
 	width:100%;
-	height: auto;
+	height: 100%;
 	background-color: #F4F4F4;
 	display: flex;
 	flex-wrap: wrap;
-	
 }
 
 form div {
 	width: 40%;
-	height:auto;
-	padding:30px;
-	
-	
+	height:100%;
+	padding:50px;	
 }
 
 
@@ -489,13 +486,25 @@ label {
 	}
 
 input {
-	width:295px;
-	height: 20px;
+	width:290px;
+	height: 35px;
 	background-color: #E5E5E5;
+	font-family: "Chivo", sans-serif;
 	margin: 0px 0px 0px 15px;
-	border-radius: 15px; 
+	border-radius: 10px; 
 	padding: 4px 0px 4px 10px;
+	outline: none;
 	
+}
+
+.si, .no{
+	height: 20px;
+}
+
+.borrar {
+	width: 100px;
+	padding: 0px
+
 }
 
 .boton-form {
