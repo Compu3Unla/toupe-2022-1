@@ -19,17 +19,17 @@
 		</nav>
 	</header>
 	<main>
-		<form method="post" action="" target="_blank" enctype="text/plain" >	
-			<h2>Datos Personales</h2>
-			<div>				
+		<div class="portada">
+	    <img src="img/portada-editperfil.svg" alt=""/> 
+		<img src="img/perfil-yo.png" width="230" height="auto" alt="Perfil propio"/> </div>
+	  <form method="post" action="" target="_blank" enctype="text/plain" >	
+			<div>
+				<h2>Datos Personales</h2>
 				<label for="Nombre">Nombre</label>
 				<input type="text" name="Nombre" id="nombre" maxlength="40" placeholder="Ingrese nombre completo" required>
 
 				<label for="Email">Email</label>
 				<input type="email" name="Email" id="email" placeholder="Ingrese email" required>
-
-				<label for="Edad">Edad</label>
-				<input type="number" name="Edad" id="edad" min="18" max="99" required>
 
 				<label for="Nacimiento">Fecha de nacimiento </label>
 				<input type="date" name="Nacimiento" id="Nacimiento">
@@ -67,26 +67,42 @@
 			</div>
 
 			<div>
+			<h2>Intereses</h2>
 			<p>¿Contas con una compañía para el festival?</p>
-			<label for="compania"> Si <input type="radio" name="compania" value="Si" class="si"></label>
-			<label for="compania"> No <input type="radio" name="compania" value="No" class="no"></label>
+			<section class="drop">
+				<button class="boton-form"></button>
+					<article class="bajada">
+						<a href="#">Si</a>
+						<a href="#">No</a>
+					</article>
+			</section>
 
 			<p>¿Contas con espacio displonible en tu vivienda?</p>
-			<label for="hospedaje"> Si <input type="radio" name="hospedaje" value="Si" class="si"></label>
-			<label for="hospedaje"> No <input type="radio" name="hospedaje" value="No" class="no"></label>
+			<section class="drop">
+				<button class="boton-form"></button>
+					<article class="bajada">
+						<a href="#">Si</a>
+						<a href="#">No</a>
+					</article>
+			</section>
 
 			<p>¿Contas con espacio displonible en tu vehículo?</p>
-			<label for="transporte"> Si <input type="radio" name="transporte" value="Si" class="si"></label>
-			<label for="transporte"> No <input type="radio" name="transporte" value="No" class="no"></label>
+			<section class="drop">
+				<button class="boton-form"></button>
+					<article class="bajada">
+						<a href="#">Si</a>
+						<a href="#">No</a>
+					</article>
+			</section>
 
 			<label for="generos-musicales">Generos musicales </label>
-			<textarea name="generos-musicales" id="generos-musicales" maxlength="100" placeholder="Agregue sus generos más escuchados"></textarea>
+			<input type="text" name="generos-musicales" id="generos-musicales" maxlength="120" required>
 
 			<label for="artistas">Artistas </label>
-			<textarea name="artistas" id="artistas" maxlength="100" placeholder="Nombre a sus artistas más escuchados"></textarea>
+			<input type="text" name="artistas" id="artistas" maxlength="120" required>
 
-			<label for="Otros">Otros </label>
-			<textarea name="Otros" id="otros" maxlength="150" placeholder="Breve descripcion de sus gustos"></textarea>
+			<label for="otros">Otros </label>
+			<input type="text" name="otros" id="otros" maxlength="120" required>
 
 			<input type="reset" value="Borrar" class="borrar">
 			<input type="submit" value="Comenzá tu experiencia Troupe" class="comenzar">	
@@ -95,9 +111,8 @@
 	</main>	
 	<footer>
 		<div class="newsletter">
-			<p>¡Suscribite a nuestro newsletter!</p>
-			<input id="newsletter" name="newsletter" placeholder= "">
-			<!-- 	<img src="img/iconoflecha.svg" width="26" height="auto" alt="flecha"/> -->
+			<label for="newsletter">¡Suscribite a nuestro newsletter!</label>
+			<input type="email" name="newsletter" id="newsletter">
 		</div>
 		<ul>
 			<li> ©2022 Troupe </li>
@@ -106,9 +121,9 @@
 			<li> Ayuda </li>
 		</ul>
 		<div class="redes">
-			<img src="img/instagram.svg" width="26" height="26" alt="instgram"/> 
-			<img src="img/facebook.svg" width="26" height="26" alt="facebook"/> 
-			<img src="img/twitter.svg" width="26" height="26" alt="twitter"/> 
+			<img src="img/instagram.svg" width="36" height="36" alt="instgram"/> 
+			<img src="img/facebook.svg" width="36" height="36" alt="facebook"/> 
+			<img src="img/twitter.svg" width="36" height="36" alt="twitter"/> 
 		</div>
 	</footer>
 </body>
