@@ -127,6 +127,34 @@ nav {
 	align-items: center;
 }
 
+.foto-portada {
+	width: 100%;
+	position: relative;
+  top: 0;
+  left: 0;
+}
+
+.portada {
+	position: relative;
+	top: 0;
+	left: 0;
+	z-index: 1;
+}
+
+.foto-perfil {
+  position: absolute;
+  top: 40px;
+  right: 50px;
+	z-index: 2;
+}
+
+.camara {
+	position: absolute;
+	top: 230px;
+	right: 36px;
+	z-index: 3;
+}
+
 footer {
 	background-color: #7F3AEE;
 	width: 100%;
@@ -461,6 +489,13 @@ h3 {
 }
 
 
+form {
+	display: flex;
+	justify-content:flex-start;
+	margin: 10px 0px 40px 0px;
+	padding-left: 60px;
+}
+
 form h2 {
 	color: #7F3AEE;
 	font-size: 1.5em;
@@ -483,9 +518,8 @@ form {
 }
 
 form div {
-	width: 40%;
+	width: 35%;
 	height:100%;
-	padding:50px;	
 }
 
 
@@ -499,21 +533,17 @@ label {
 	}
 
 input {
-	width:290px;
+	width:350px;
 	height: 35px;
 	background-color: #E5E5E5;
 	font-family: "Archivo", sans-serif;
-	margin: 0px 0px 0px 15px;
+	margin: 0px 0px 15px 15px;
 	border-radius: 10px; 
 	padding: 4px 0px 4px 10px;
 	outline: none;
 	border: none;
-	
 }
 
-.si, .no{
-	height: 20px;
-}
 
 .borrar {
 	width: 100px;
@@ -524,25 +554,41 @@ input {
 .boton-form {
 	background-color: #E5E5E5;
 	color: white;
-	padding: 16px;
-	margin-left: 15px;  
+	padding: 16px;  
 	font-size: 16px;
 	border-radius:10px;
-	width: 290px !important;
+	width: 350px !important;
 	border: none;
-  
+	margin: 6px 0px 15px 15px;
+}
+
+.boton-comenzar a {
+	text-decoration: none;
+	color: #7F3AEE;
+	text-align: center;
+}
+
+.boton-comenzar {
+	border-radius: 10px;
+	border: 3px solid #7F3AEE;
+	width: 350px;
+	margin: 15px;
+}
+
+.boton-comenzar a h3 {
+	padding: 8px 0px;
 }
 
 .drop {
 	position: relative;
 	display: inline-block;
-	
+
 }
 
 .bajada {
  	display: none;
  	position: absolute;
-	width: 290px !important;
+	width: 350px !important;
  	border-radius: 10px;
 	background-color: #E5E5E5;
 	margin-left: 15px;
