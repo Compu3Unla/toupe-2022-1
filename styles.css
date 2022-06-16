@@ -164,6 +164,17 @@ footer ul {
 
 footer ul li {
 	padding:18px;
+	list-style: none;
+}
+
+footer ul li a {
+	text-decoration: none;
+	color: #f4f4f4;
+}
+
+footer ul li a:hover {
+	color: #66CC99;
+	font-weight: 600;
 }
 
 .redes img {
@@ -310,6 +321,24 @@ h2 {
 
 .boton-mas h4 {
 	color: #F4F4F4;
+}
+
+.boton {
+	border: 3px solid #F4F4F4;
+	max-width: 300px;
+	border-radius: 10px;
+	padding: 8px 10px;
+	display: flex;
+	align-items: center center;
+}
+
+.boton a:hover {
+	color: #F4F4F4;
+	background-color: #7F3AEE;
+}
+
+.boton a {
+	text-decoration: none;
 }
 
 .boton-mas {
@@ -511,7 +540,6 @@ input {
 	background-color: #E5E5E5;
 	color: white;
 	padding: 16px;
-	margin-left: 15px;  
 	font-size: 16px;
 	border-radius:10px;
 	width: 290px !important;
@@ -609,8 +637,13 @@ input {
 	footer ul {
 		width: 55%;
 		flex-wrap: wrap;
-
 	}
+	
+	footer ul li a {
+		
+	}
+	
+	
 	.redes {
 		padding: 0;
 		width: 25%;
