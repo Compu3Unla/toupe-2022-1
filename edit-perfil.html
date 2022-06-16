@@ -19,17 +19,20 @@
 		</nav>
 	</header>
 	<main>
-		<form method="post" action="" target="_blank" enctype="text/plain" >	
-			<h2>Datos Personales</h2>
-			<div>				
+		<div class="portada">
+			<img class="foto-portada" src="img/portada-edit-perfil.png" width="1920px" height="auto" alt="portada"/>
+			<img class="foto-perfil" src="img/perfil-yo.png" width="230" height="auto" alt="Perfil propio"/>
+			<img class="camara" src="img/iconocamara.svg" width="50px" height="auto" alt="camara"/>
+		</div>
+		
+		<form method="post" action="" target="_blank" enctype="text/plain">
+			<div>
+				<h2>Datos Personales</h2>
 				<label for="Nombre">Nombre</label>
 				<input type="text" name="Nombre" id="nombre" maxlength="40" placeholder="Ingrese nombre completo" required>
 
 				<label for="Email">Email</label>
 				<input type="email" name="Email" id="email" placeholder="Ingrese email" required>
-
-				<label for="Edad">Edad</label>
-				<input type="number" name="Edad" id="edad" min="18" max="99" required>
 
 				<label for="Nacimiento">Fecha de nacimiento </label>
 				<input type="date" name="Nacimiento" id="Nacimiento">
@@ -43,7 +46,7 @@
 
 				<p> Provincia </p>
 				<section class="drop">
-				<button class="boton-form"></button>
+				  <button class="boton-form"></button>
 					<article class="bajada">
 						<a href="#">Buenos Aires</a>
 						<a href="#">Chaco</a>
@@ -55,7 +58,7 @@
 
 				<p> Ciudad </p>
 				<section class="drop">
-				<button class="boton-form"></button>
+				  <button class="boton-form"></button>
 					<article class="bajada">
 						<a href="#">Avellaneda</a>
 						<a href="#">Bandfield</a>
@@ -64,40 +67,55 @@
 						<a href="#">La Plata</a>
 					</article>
 				</section>
-			</div>
+	    </div>
 
-			<div>
-			<p>¿Contas con una compañía para el festival?</p>
-			<label for="compania"> Si <input type="radio" name="compania" value="Si" class="si"></label>
-			<label for="compania"> No <input type="radio" name="compania" value="No" class="no"></label>
+		<div>
+		  <h2>Intereses</h2>
+		  <p>¿Cont&aacute;s con una compa&ntilde;&iacute;a para el festival?</p>
+		  <section class="drop">
+			  <button class="boton-form"></button>
+				  <article class="bajada">
+					  <a href="#">Si</a>
+					  <a href="#">No</a>
+				  </article>
+		  </section>
 
-			<p>¿Contas con espacio displonible en tu vivienda?</p>
-			<label for="hospedaje"> Si <input type="radio" name="hospedaje" value="Si" class="si"></label>
-			<label for="hospedaje"> No <input type="radio" name="hospedaje" value="No" class="no"></label>
+		  <p>¿Cont&aacute;s con espacio disponible en tu vivienda?</p>
+		  <section class="drop">
+			  <button class="boton-form"></button>
+				  <article class="bajada">
+					  <a href="#">Si</a>
+					  <a href="#">No</a>
+				  </article>
+		  </section>
 
-			<p>¿Contas con espacio displonible en tu vehículo?</p>
-			<label for="transporte"> Si <input type="radio" name="transporte" value="Si" class="si"></label>
-			<label for="transporte"> No <input type="radio" name="transporte" value="No" class="no"></label>
+		  <p>¿Cont&aacute;s con espacio disponible en tu veh&iacute;culo?</p>
+		  <section class="drop">
+			  <button class="boton-form"></button>
+				  <article class="bajada">
+					  <a href="#">Si</a>
+					  <a href="#">No</a>
+				  </article>
+		  </section>
 
-			<label for="generos-musicales">Generos musicales </label>
-			<textarea name="generos-musicales" id="generos-musicales" maxlength="100" placeholder="Agregue sus generos más escuchados"></textarea>
+		  <label for="generos-musicales">G&eacute;neros musicales </label>
+		  <input type="text" name="generos-musicales" id="generos-musicales" maxlength="120" required>
 
-			<label for="artistas">Artistas </label>
-			<textarea name="artistas" id="artistas" maxlength="100" placeholder="Nombre a sus artistas más escuchados"></textarea>
+		  <label for="artistas">Artistas </label>
+		  <input type="text" name="artistas" id="artistas" maxlength="120" required>
 
-			<label for="Otros">Otros </label>
-			<textarea name="Otros" id="otros" maxlength="150" placeholder="Breve descripcion de sus gustos"></textarea>
-
-			<input type="reset" value="Borrar" class="borrar">
-			<input type="submit" value="Comenzá tu experiencia Troupe" class="comenzar">	
+		  <label for="otros">Otros </label>
+		  <input type="text" name="otros" id="otros" maxlength="120" required>
+			<div class="boton-comenzar">
+		 		 <a href="filtros.html"> <h3> Comenz&aacute; tu experiencia Troupe</h3> </a>
 			</div>	
-		</form>
+	    </div>	
+	</form>
 	</main>	
 	<footer>
 		<div class="newsletter">
-			<p>¡Suscribite a nuestro newsletter!</p>
-			<input id="newsletter" name="newsletter" placeholder= "">
-			<!-- 	<img src="img/iconoflecha.svg" width="26" height="auto" alt="flecha"/> -->
+			<label for="newsletter">¡Suscribite a nuestro newsletter!</label>
+			<input type="email" name="newsletter" id="newsletter">
 		</div>
 		<ul>
 			<li><a href="index.html" target="_blank">©2022 Troupe</a></li>
@@ -106,12 +124,18 @@
 			<li><a href="index.html" target="_blank">Ayuda</a></li>
 		</ul>
 		<div class="redes">
+<<<<<<< HEAD
 			<a href="https://www.instagram.com/" target="_self">
 			<img src="img/instagram.svg" width="26" height="26" alt="instgram"/></a>
 			<a href="https://www.facebook.com/" target="_self">
 			<img src="img/facebook.svg" width="26" height="26" alt="facebook"/></a>
 			<a href="https://twitter.com/home?lang=es" target="_self">
 			<img src="img/twitter.svg" width="26" height="26" alt="twitter"/></a>
+=======
+			<img src="img/instagram.svg" width="36" height="36" alt="instgram"/> 
+			<img src="img/facebook.svg" width="36" height="36" alt="facebook"/> 
+			<img src="img/twitter.svg" width="36" height="36" alt="twitter"/> 
+>>>>>>> 721b2c480c0f40f56107750153b2c61031cc7b66
 		</div>
 	</footer>
 </body>
