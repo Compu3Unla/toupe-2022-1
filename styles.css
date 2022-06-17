@@ -133,8 +133,92 @@ h1 {
 	user-select: all;
 }
 
-
 /*fin slider provincias*/
+
+/*mi perfil*/
+
+.contenedormi-perfil {
+	display: flex;
+	flex-direction: row;
+	padding:53px;
+	background-color: #E5E5E5;	
+	justify-content: center;
+}
+
+.datos-perfil {
+	display: flex;
+	flex-direction: row;
+	background-color:#66CC99;
+	width: 60%;
+	margin-left: 60px;
+	justify-content: space-around;
+}
+
+
+.infoperfil {
+	color:#F4F4F4;
+	padding: 55px 0px;
+}
+
+.infoperfil p{
+	padding: 5px 0 25px 0;
+	color: #F4F4F4;
+}
+
+.infoperfil h3{
+	margin-bottom: 25px;
+}
+
+
+.hashtags {
+	display: flex;	
+}
+
+.hashtags h4 {
+	background-color: #F4F4F4;
+	padding: 7px;
+	border-radius: 7px;
+	margin-right: 15px;
+	color: #66CC99;
+	
+}
+	
+.perfil-manuel {
+	display:flex;
+	padding: 40px 0;
+	justify-content: center;
+	width: 25%;
+}
+
+
+.perfil-manuel article {
+	background-color:#F4F4F4;
+	padding: 50px 30px;
+	margin: 20px;
+	color: #F4F4F4;
+	
+}
+
+.perfil-manuel article h5 {
+	color: #7F3AEE;
+	font-weight: 500;
+}
+
+.perfil-manuel article h3 {
+	color: #7F3AEE;
+}
+
+.perfil-manuel article h4 {
+	color: #7F3AEE;
+}
+
+.perfil-manuel h4 {
+	padding-bottom: 20px;
+}
+	
+.perfil-manuel a {
+	margin-top: 20px;
+}	
 
 /*galería de imágenes*/
 
@@ -310,6 +394,7 @@ main {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+	
 }
 
 section {
