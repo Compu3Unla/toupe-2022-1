@@ -34,7 +34,10 @@ header {
 	background-image: url("img/entrada.png");
 	background-repeat: no-repeat;
 	background-size: 100% auto;
-	
+}
+
+a {
+	text-decoration: none;
 }
 
 h1 {
@@ -42,7 +45,7 @@ h1 {
 	font-size: 12em;
 	font-family: "Space Grotesk", sans-serif;
 	position: relative;
-	top: 300px;
+	top: 220px;
 	animation: tracking-in-expand 1s cubic-bezier(.215,.61,.355,1.000) both
 	
 }
@@ -54,10 +57,6 @@ h1 {
 	flex-direction: column;
 	align-items: center;
 	
-}
-
-.troupe a{
-	text-decoration: none;
 }
 
 /*bienvenida 1*/
@@ -74,7 +73,7 @@ h1 {
 	display: flex;
 	flex-direction: row;
 	position: relative;
-	top: 200px;
+	top: 110px;
 	align-items: center;
 }
 
@@ -88,7 +87,7 @@ h1 {
 
 .contenedor-bienv article h2 {
 	margin: 0px;
-	font-size: 3.3em;
+	font-size: 2.7em;
 	text-align: left;
 	color: #F4F4F4;
 	padding-bottom: 15px;
@@ -96,7 +95,7 @@ h1 {
 }
 
 .contenedor-bienv article h3 {
-	font-size: 1.9em;
+	font-size: 1.7em;
 	color: #F4F4F4;
 	font-weight: 400;
 	line-height: 1.3em;
@@ -112,10 +111,6 @@ h1 {
 	margin-top: 40px;
 }
 
-.boton-ir-registro a  {
-	text-decoration: none;
-	
-}
 
 .boton-ir-registro a h3{
 	padding: 0px;
@@ -234,21 +229,21 @@ nav {
 	position: relative;
 	top: 0;
 	left: 0;
-	z-index: 1;
+	z-index: 10;
 }
 
 .foto-perfil {
-  position: absolute;
-  top: 40px;
-  right: 50px;
-	z-index: 2;
+	position: absolute;
+	top: 40px;
+	right: 50px;
+	z-index: 20;
 }
 
 .camara {
 	position: absolute;
 	top: 230px;
 	right: 36px;
-	z-index: 3;
+	z-index: 30;
 }
 
 footer {
@@ -423,72 +418,77 @@ h2 {
 	padding-top: 5px;
 }
 
-.botones-perfil .boton {
-	padding: 10px 5px 5px 5px;
-}
+/*botones*/
 
-.botones-perfil img {
-	margin: 10px 5px 5px 5px;
-}
-
-.boton-mas h4 {
-	color: #F4F4F4;
-	padding: 10px;
-}
-
-.boton {
-	border: 3px solid #F4F4F4;
-	max-width: 300px;
+.button-violeta button {
+	color: #7F3AEE;
+	border: 3px solid #7F3AEE;
+	background-color: #F4F4F4;
 	border-radius: 10px;
 	padding: 8px 10px;
 	display: flex;
-	align-items: center center;
-}
-
-.boton a:hover {
-	color: #F4F4F4;
-	background-color: #7F3AEE;
-}
-
-.boton a {
+	align-items: center;
+	cursor: pointer;
 	text-decoration: none;
+	font-weight: 700;
+	font-size: 1.3em;
 }
 
-.boton-mas {
+.button-violeta button:hover {
+	background-color: #7F3AEE;
+	color: #F4F4F4;
+}
+
+.button-blanco button {
+	color: #F4F4F4;
 	border: 3px solid #F4F4F4;
-	max-width: 300px;
+	background-color: #7F3AEE;
 	border-radius: 10px;
+	padding: 8px 10px;
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	text-decoration: none;
+	font-weight: 700;
+	font-size: 1.3em;
 }
 
-.boton-mas:hover {
+.button-blanco button:hover {
 	background-color: #F4F4F4;
-}
-
-.boton-mas a h4:hover {
 	color: #7F3AEE;
 }
 
-.boton-mas a {
-	text-decoration: none;
+.botones-perfil .button-violeta button {
+	font-size: 0.9em;
+	padding: 5px 7px;
+	border: 2.5px solid;
+}
+
+.intereses .button-violeta button {
+	margin: 17px 0px 0px 15px;
+}
+
+.contenedor-bienv .button-blanco button {
+	background-color: transparent;
+	margin-top: 40px;
+}
+
+.contenedor-bienv .button-blanco button:hover {
+	background-color: #F4F4F4;
+}
+
+.botones-perfil img {
+	margin: 10px 8px 5px 8px;
 }
 
 .boton-armar-troupe {
 	display: flex;
-	justify-content: center;
+	flex-direction: row;
+	justify-content: space-between;
+	margin: 60px 0px;
 }
 
-.boton a:hover {
-	background-color: #7F3AEE;
-}
-
-.boton a h2:hover {
-	color: #F4F4F4;
-}
-
-.boton-armar-troupe img {
-	position: absolute;
-	width: 100%;
-}
+/*fin botones*/
 
 .contenedor-comentarios {
 	display:flex;
@@ -679,11 +679,7 @@ input {
 .boton-form {
 	background-color: #E5E5E5;
 	color: white;
-<<<<<<< HEAD
 	padding: 16px;
-=======
-	padding: 16px;  
->>>>>>> 721b2c480c0f40f56107750153b2c61031cc7b66
 	font-size: 16px;
 	border-radius:10px;
 	width: 350px !important;
@@ -760,10 +756,14 @@ input {
 		width: 40%;
 		margin-bottom: 40px;
 	}
+	.contenedor-perfiles article .botones-perfil img {
+		width: 30px;
+	}
+	
 	.contenedor-perfiles article img {
 		width: 100%;
-
 	}
+	
 	.galeria {
 		padding-bottom: 0px;
 	}	
@@ -818,6 +818,9 @@ input {
 	}
 	.busqueda article h5 {
 		min-width: 300px;
+}
+	.videos article iframe {
+	width: 100%;
 }
 	
 }

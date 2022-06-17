@@ -23,9 +23,10 @@
 			<img class="foto-portada" src="img/portada-edit-perfil.png" width="1920px" height="auto" alt="portada"/>
 			<img class="foto-perfil" src="img/perfil-yo.png" width="230" height="auto" alt="Perfil propio"/>
 			<img class="camara" src="img/iconocamara.svg" width="50px" height="auto" alt="camara"/>
+		<!--como podemos hacer para poner un input file-->
 		</div>
 		
-		<form method="post" action="" target="_blank" enctype="text/plain">
+		<form method="post" action="" target="_blank" enctype="multipart/form-data">
 			<div>
 				<h2>Datos Personales</h2>
 				<label for="Nombre">Nombre</label>
@@ -69,7 +70,7 @@
 				</section>
 	    </div>
 
-		<div>
+		<div class="intereses">
 		  <h2>Intereses</h2>
 		  <p>¿Cont&aacute;s con una compa&ntilde;&iacute;a para el festival?</p>
 		  <section class="drop">
@@ -106,9 +107,9 @@
 
 		  <label for="otros">Otros </label>
 		  <input type="text" name="otros" id="otros" maxlength="120" required>
-			<div class="boton-comenzar">
-		 		 <a href="filtros.html"> <h3> Comenz&aacute; tu experiencia Troupe</h3> </a>
-			</div>	
+			<a class="button-violeta" href="perfiles.html">
+    			<button>Comenz&aacute; tu experiencia Troupe</button>
+  			</a> 
 	    </div>	
 	</form>
 	</main>	
@@ -118,25 +119,19 @@
 			<input type="email" name="newsletter" id="newsletter">
 		</div>
 		<ul>
-			<li><a href="index.html" target="_blank">©2022 Troupe</a></li>
-			<li><a href="index.html" target="_blank">T&eacute;rminos y condiciones</a></li>
-			<li><a href="index.html" target="_blank">Pol&iacute;tica de privacidad</a></li>
-			<li><a href="index.html" target="_blank">Ayuda</a></li>
+			<li><a href="index.html" target="_self">©2022 Troupe</a></li>
+			<li><a href="index.html" target="_self">T&eacute;rminos y condiciones</a></li>
+			<li><a href="index.html" target="_self">Pol&iacute;tica de privacidad</a></li>
+			<li><a href="index.html" target="_self">Ayuda</a></li>
 		</ul>
 		<div class="redes">
-<<<<<<< HEAD
-			<a href="https://www.instagram.com/" target="_self">
-			<img src="img/instagram.svg" width="26" height="26" alt="instgram"/></a>
-			<a href="https://www.facebook.com/" target="_self">
-			<img src="img/facebook.svg" width="26" height="26" alt="facebook"/></a>
-			<a href="https://twitter.com/home?lang=es" target="_self">
-			<img src="img/twitter.svg" width="26" height="26" alt="twitter"/></a>
-=======
-			<img src="img/instagram.svg" width="36" height="36" alt="instgram"/> 
-			<img src="img/facebook.svg" width="36" height="36" alt="facebook"/> 
-			<img src="img/twitter.svg" width="36" height="36" alt="twitter"/> 
->>>>>>> 721b2c480c0f40f56107750153b2c61031cc7b66
-		</div>
+			<a href="https://www.instagram.com/" target="_blank"> 
+			<img src="img/instagram.svg" width="36" height="36" alt="instgram"/></a>
+			<a href="https://www.facebook.com/" target="_blank">
+			<img src="img/facebook.svg" width="36" height="36" alt="facebook"/></a>
+			<a href="https://twitter.com/home?lang=es" target="_blank"> 
+			<img src="img/twitter.svg" width="36" height="36" alt="twitter"/> </a>
+	 	</div>
 	</footer>
 </body>
 </html>
