@@ -427,8 +427,8 @@ footer {
 	justify-content: space-between;
 	box-sizing: border-box;
 	color: #f4f4f4;
-	position: absolute;
-	bottom:0;
+	/* position: absolute;
+	bottom:0; */
 }
 
 footer ul {
@@ -481,6 +481,10 @@ main {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
+}
+
+.main-con-footer{
+	height: 100vh;
 }
 
 section {
