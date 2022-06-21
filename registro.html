@@ -4,9 +4,28 @@
 	<meta charset="utf-8">
 	<link href="styles.css" rel="stylesheet" type="text/css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Troupe</title>
+	<title>Troupe</title>
 </head>
 
-<body>
+<body class="fondo-registro">
+	<section class="contenedor-registro">
+		<img src="img/flecha.svg" width="410" height="auto" alt="Flecha"/>
+		<div class="registro">
+			<form method="post" action="" target="_blank" enctype="text/plain">
+				<h2>Registro</h2>
+				<label for="Nombre">Nombre</label>
+				<input type="text" name="Nombre" id="nombre" maxlength="40" placeholder="Ingrese nombre completo" required>
+				<label for="Email">Email</label>
+				<input type="email" name="Email" id="email" placeholder="Ingrese email" required>
+				<label for="password">Contrase&ntilde;a</label>
+				<input type="password" name="password" id="password" placeholder="Ingrese contraseña" required>
+			</form>
+			<a class="button-violeta" href="filtros.html">
+				<button>¡Registrarse!</button>
+			</a>
+		</div>
+	</section>
 </body>
+	
+
 </html>

@@ -44,8 +44,6 @@ h1 {
 	color: #F4F4F4;
 	font-size: 12em;
 	font-family: "Space Grotesk", sans-serif;
-	position: relative;
-	top: 220px;
 	animation: tracking-in-expand 1s cubic-bezier(.215,.61,.355,1.000) both
 	
 }
@@ -55,8 +53,9 @@ h1 {
 .troupe {
 	display: flex;
 	flex-direction: column;
-	align-items: center;
-	
+	align-items: center !important;
+	justify-content: center !important;
+	height:83vh;
 }
 
 /*bienvenida 1*/
@@ -67,21 +66,21 @@ h1 {
 	background-size: 100% auto;
 }
 
-
 .contenedor-bienv {
 	width: 100%;
 	display: flex;
 	flex-direction: row;
 	position: relative;
-	top: 110px;
+	top: 180px;
 	align-items: center;
+	height: 48vh;
 }
 
 .contenedor-bienv img {
 	margin-right: 100px;
 }
 .contenedor-bienv article {
-	width: 40%;
+	width: 33%;
  	align-items:flex-start;
 }
 
@@ -100,6 +99,73 @@ h1 {
 	font-weight: 400;
 	line-height: 1.3em;
 }
+
+.puntitos {
+	height: 40vh;
+}
+
+.puntitos div a:hover {
+	background-color: #66CC99;
+}
+
+/*registro*/
+
+.contenedor-registro {
+	width: 100%;
+	display: flex;
+	flex-direction: row;
+	height: 100vh;
+	align-items: center;
+}
+
+.fondo-registro{
+	background-image: url("img/fondo-registro.png");
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+}
+
+.registro {
+	display:flex;
+	flex-direction: column;
+}
+
+.registro form {
+	display:flex;
+	flex-direction: column;
+	height: 700px;
+	background-color: #66CC99;
+	width: 700px;
+	margin-left: 100px;
+	align-items: flex-start;
+	padding-left: 100px;
+	justify-content: flex-start;
+	padding-top: 100px;
+}
+
+.registro form label {
+	margin-top: 30px;
+	font-size: 1.2em;
+}
+
+.registro form input {
+	font-size: 1.1em;
+}
+
+.registro form h2 {
+	color: #F4F4F4;
+	font-size: 2.5em;
+}
+
+.registro .button-violeta button {
+	position: relative;
+	bottom: 170px;
+	left: 210px;
+	background-color: transparent;
+	color: #F4F4F4;
+	border: solid #F4F4F4;
+}
+
+/*fin registro*/
 
 /*bienvenida 2*/
 
@@ -318,15 +384,15 @@ nav {
 
 .foto-perfil {
 	position: absolute;
-	top: 40px;
-	right: 50px;
+	top: 120px;
+	right: 150px;
 	z-index: 20;
 }
 
 .camara {
 	position: absolute;
-	top: 230px;
-	right: 36px;
+	top: 370px;
+	right: 130px;
 	z-index: 30;
 }
 
@@ -394,7 +460,6 @@ main {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	
 }
 
 section {
@@ -698,14 +763,6 @@ h3 {
 	padding: 30px;
 }
 
-
-form {
-	display: flex;
-	justify-content:flex-start;
-	margin: 10px 0px 40px 0px;
-	padding-left: 60px;
-}
-
 form h2 {
 	color: #7F3AEE;
 	font-size: 1.5em;
@@ -720,15 +777,17 @@ form p {
 	
 }
 form {
-	width:100%;
+	width:90%;
 	height: 100%;
 	background-color: #F4F4F4;
 	display: flex;
-	flex-wrap: wrap;
+	justify-content:center;
+	margin: 50px 0px;
+	
 }
 
 form div {
-	width: 35%;
+	width: 30%;
 	height:100%;
 }
 
@@ -739,7 +798,6 @@ label {
 	padding-left: 15px;
 	color:#2C2C27;
 	font-size: 1em;
-	
 	}
 
 input {
@@ -760,6 +818,7 @@ input {
 	padding: 0px
 
 }
+
 
 .boton-form {
 	background-color: #E5E5E5;
