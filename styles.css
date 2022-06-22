@@ -157,13 +157,16 @@ h1 {
 	font-size: 2.5em;
 }
 
-.registro .button-violeta button {
-	position: relative;
-	bottom: 170px;
-	left: 210px;
+.registro .button-violeta span {
 	background-color: transparent;
 	color: #F4F4F4;
 	border: solid #F4F4F4;
+	margin-top: 50px;
+}
+
+.registro .button-violeta span:hover {
+	background-color: #F4F4F4;
+	color:#66CC99;
 }
 
 /*fin registro*/
@@ -232,22 +235,22 @@ h1 {
 	background-color:#66CC99;
 	width: 60%;
 	margin-left: 60px;
-	justify-content: space-around;
+	justify-content: flex-start;
 }
 
 
 .infoperfil {
 	color:#F4F4F4;
-	padding: 55px 0px;
+	padding: 55px 130px;
 }
 
 .infoperfil p{
-	padding: 5px 0 25px 0;
+	padding: 5px 0px 40px 0px;
 	color: #F4F4F4;
 }
 
 .infoperfil h3{
-	margin-bottom: 50px;
+	margin: 50px 0px 60px 0px;
 }
 
 
@@ -262,6 +265,10 @@ h1 {
 	margin-right: 15px;
 	color: #66CC99;
 	
+}
+
+.perfil-manuel .botones-perfil img{
+	padding: 0px;
 }
 	
 .perfil-manuel {
@@ -403,14 +410,14 @@ nav {
 
 .foto-perfil {
 	position: absolute;
-	top: 120px;
+	top: 90px;
 	right: 150px;
 	z-index: 20;
 }
 
 .camara {
 	position: absolute;
-	top: 370px;
+	top: 360px;
 	right: 130px;
 	z-index: 30;
 }
@@ -427,8 +434,6 @@ footer {
 	justify-content: space-between;
 	box-sizing: border-box;
 	color: #f4f4f4;
-	position: absolute;
-	bottom:0;
 }
 
 footer ul {
@@ -609,8 +614,14 @@ h2 {
 	max-width: 350px;
 	margin-top: 30px;
 	margin-left: 15px;
-	
+		
 }
+
+.button-violeta span:hover {
+	background-color: #7F3AEE;
+	color: #F4F4F4;
+}
+
 .button-violeta button:hover {
 	background-color: #7F3AEE;
 	color: #F4F4F4;
@@ -761,6 +772,10 @@ h3 {
 	color: #F4F4F4;
 }
 
+.festivales article, .busqueda article {
+	padding: 0px 30px;
+}
+
 .festivales, .busqueda, .provincias {
 	padding: 30px 0px 20px 0px;
 }
@@ -793,7 +808,8 @@ h3 {
 form h2 {
 	color: #7F3AEE;
 	font-size: 1.5em;
-	text-align: left
+	text-align: left;
+	padding-top: 12px;
 	
 }
 
@@ -809,7 +825,7 @@ form {
 	background-color: #F4F4F4;
 	display: flex;
 	justify-content:center;
-	margin: 50px 0px;
+	margin: 40px 0px;
 	
 }
 
@@ -965,19 +981,16 @@ input {
 		width: 55%;
 		flex-wrap: wrap;
 	}
-	
-	footer ul li a {
-		
-	}
-	
+
 	
 	.redes {
 		padding: 0;
 		width: 25%;
 	}
 	.redes img {
-		padding: 0;
-		width: 32%;
+		margin: 0px 5px;
+		padding: 0px;
+		width: 20%;
 	}
 
 	.contenedor-filtros {
@@ -993,6 +1006,18 @@ input {
 	.videos article iframe {
 	width: 100%;
 }
+	
+/*FILTROS*/
+	
+	.boton-armar-troupe img {
+		display: none;
+	}
+	
+	.boton-armar-troupe {
+		justify-content: center;
+	}
+	
+	
 	
 }
 
