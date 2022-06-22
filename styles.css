@@ -42,7 +42,7 @@ a {
 
 h1 {
 	color: #F4F4F4;
-	font-size: 12em;
+	font-size: 13em;
 	font-family: "Space Grotesk", sans-serif;
 	animation: tracking-in-expand 1s cubic-bezier(.215,.61,.355,1.000) both
 	
@@ -104,7 +104,7 @@ h1 {
 	height: 40vh;
 }
 
-.puntitos div a:hover {
+.puntitos div a span:hover {
 	background-color: #66CC99;
 }
 
@@ -302,6 +302,7 @@ h1 {
 
 .perfil-manuel article h4 {
 	color: #7F3AEE;
+	text-align: center;
 }
 
 .perfil-manuel h4 {
@@ -806,6 +807,12 @@ h3 {
 	padding: 30px;
 }
 
+/*edit-perfil*/
+
+.portada-mobile {
+	display:none;
+}
+
 form h2 {
 	color: #7F3AEE;
 	font-size: 1.5em;
@@ -854,13 +861,6 @@ input {
 	padding: 4px 0px 4px 10px;
 	outline: none;
 	border: none;
-}
-
-
-.borrar {
-	width: 100px;
-	padding: 0px
-
 }
 
 
@@ -1015,6 +1015,171 @@ input {
 	}
 	
 	.boton-armar-troupe {
+		justify-content: center;
+	}
+	
+/*bienvenida*/
+	
+	.bienvenida {
+	background-image: url("img/entrada-mobile.png");
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+}
+	h1 {
+		font-size: 8em;
+	}
+	
+/*bienvenida1*/
+	
+	.bienvenida1 {
+	background-image: url("img/bienvenida1mobile.png");
+	background-repeat: no-repeat;
+	background-size: 100% auto;
+	
+}
+	
+	.contenedor-bienv {
+		flex-direction: column;
+		height: 40vh;
+	}
+	
+	.contenedor-bienv article {
+		width: 80%;
+		text-align: center;
+		align-items: center;
+	}
+	
+	.contenedor-bienv article h2 {
+		text-align: center;
+		font-size: 2.5em;
+	}
+	
+	.contenedor-bienv img {
+		width: 40%;
+		margin: 80px 0px 60px 0px;
+	}
+	
+	.puntitos {
+		height: 75vh;
+	}
+	
+	/*registro*/
+	
+	.fondo-registro {
+		background-image: none;
+	}
+	
+	.flecha2 {
+		display:none;
+	}
+	
+	.registro {
+		width: 100%;
+	}
+	
+	.registro form {
+		width: 100%;
+		padding: 0px 0px 0px 70px;
+		margin: 0px;
+		height: 1080px;
+		justify-content: center;
+	}
+	
+	/*perfil trouper*/
+	
+	.perfil-manuel {
+		width: 511px;
+		padding-top: 0px;
+	}
+	
+	.contenedormi-perfil {
+		flex-direction: column;
+		height: 190vh;
+		align-items: center;
+		padding: 0px 40px;
+	}
+	
+	.perfil-manuel article {
+		flex-direction: row;
+		padding: 15px 40px 15px 40px;
+		justify-content: center;
+	}
+	
+	.texto-perfil {
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+		padding-left: 30px;
+		
+	}
+	
+	.texto-perfil h4, .texto-perfil h5 {
+		text-align: left !important;
+		width: 100%;
+	}
+	
+	.botones-perfil {
+		justify-content: flex-start;
+	}
+	
+	.perfil-manuel .botones-perfil img {
+		margin:7px 0px 0px 0px;
+	}
+	
+	.datos-perfil {
+		width: 90%;
+		flex-direction: column;
+		position: relative;
+		right: 30px;
+	}
+	
+	.infoperfil {
+		padding: 80px 80px 10px 80px;
+	}
+	
+	.infoperfil {
+		font-size: 1.3em;
+	}
+	
+	.infoperfil h3 {
+		margin-top: 0px;
+	}
+	
+	.hashtags h4 {
+		font-size: 0.9em;
+	}
+	
+	.foto-portada {
+		display: none;
+	}
+	
+	.portada-mobile {
+		display: flex;
+	}
+	
+	.foto-perfil {
+		width: 40%;
+		right: 170px;
+		top: 50px;
+	}
+	
+	.camara {
+		top: 260px;
+		right: 150px;
+	}
+	
+	form {
+		flex-direction: column;
+		align-items: flex-start;
+		margin-left:110px;
+		margin-top: 150px;
+	}
+	
+	form p, form label, form h2, form span{
+		width: 500px;
+	}
+	
+	form span {
 		justify-content: center;
 	}
 	
