@@ -291,6 +291,7 @@ h1 {
 
 .perfil-manuel article h3 {
 	color: #7F3AEE;
+	text-align: center;
 }
 
 .perfil-manuel article h4 {
@@ -1093,8 +1094,13 @@ input {
 		justify-content: flex-start;
 		padding-left: 30px;
 	}
+<<<<<<< HEAD
 
 	.texto-perfil h4, .texto-perfil h5 {
+=======
+	
+	.texto-perfil h4, .texto-perfil h5, .texto-perfil h3 {
+>>>>>>> 7556ad469223fbc61819bf4d6f31934aa64e7f50
 		text-align: left !important;
 		width: 100%;
 	}
