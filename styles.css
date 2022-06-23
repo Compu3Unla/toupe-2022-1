@@ -298,6 +298,7 @@ h1 {
 
 .perfil-manuel article h3 {
 	color: #7F3AEE;
+	text-align: center;
 }
 
 .perfil-manuel article h4 {
@@ -1113,7 +1114,7 @@ input {
 		
 	}
 	
-	.texto-perfil h4, .texto-perfil h5 {
+	.texto-perfil h4, .texto-perfil h5, .texto-perfil h3 {
 		text-align: left !important;
 		width: 100%;
 	}
