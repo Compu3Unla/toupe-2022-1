@@ -58,8 +58,18 @@ h1 {
 	height:83vh;
 }
 
+.troupe h3 {
+	color: #f4f4f4;
+	font-weight: 400;
+}
+
 /*bienvenida 1*/
 
+.puntitos .dot {
+	width: 20px;
+	height: 20px;
+	margin: 5px;
+}
 .bienvenida1 {
 	background-image: url("img/bienvenida1.png");
 	background-repeat: no-repeat;
@@ -101,7 +111,7 @@ h1 {
 }
 
 .puntitos {
-	height: 40vh;
+	height: 50vh;
 }
 
 .puntitos div a span:hover {
@@ -224,7 +234,6 @@ h1 {
 	padding:53px;
 	background-color: #E5E5E5;
 	justify-content: center;
-	height: 83vh;
 }
 
 .datos-perfil {
@@ -252,6 +261,7 @@ h1 {
 
 .hashtags {
 	display: flex;
+	flex-wrap: wrap;
 }
 
 .hashtags h4 {
@@ -259,6 +269,7 @@ h1 {
 	padding: 7px;
 	border-radius: 7px;
 	margin-right: 15px;
+	margin-top: 15px;
 	color: #66CC99;
 }
 
@@ -586,6 +597,15 @@ h2 {
 
 /*botones*/
 
+.boton-vermastarde .button-violeta button {
+	background-color: transparent;
+	margin-bottom: 40px;
+}
+
+.boton-vermastarde {
+	display: flex;
+	justify-content: center;
+}
 .button-violeta button, .button-violeta span {
 	color: #7F3AEE;
 	border: 3px solid #7F3AEE;
@@ -1077,7 +1097,7 @@ input {
 
 	.contenedormi-perfil {
 		flex-direction: column;
-		height: 190vh;
+		height: 220vh;
 		align-items: center;
 		padding: 0px 40px;
 	}
