@@ -234,6 +234,7 @@ h1 {
 	padding:53px;
 	background-color: #E5E5E5;
 	justify-content: center;
+	align-items: flex-start;
 }
 
 .datos-perfil {
@@ -247,7 +248,7 @@ h1 {
 
 .infoperfil {
 	color:#F4F4F4;
-	padding: 55px 130px;
+	padding: 55px 120px;
 }
 
 .infoperfil p {
@@ -257,6 +258,7 @@ h1 {
 
 .infoperfil h3 {
 	margin: 50px 0px 60px 0px;
+	width: 170px;
 }
 
 .hashtags {
@@ -279,7 +281,6 @@ h1 {
 
 .perfil-manuel {
 	display:flex;
-	padding: 40px 0;
 	justify-content: center;
 	width: 25%;
 }
@@ -291,7 +292,7 @@ h1 {
 .perfil-manuel article {
 	background-color:#F4F4F4;
 	padding: 50px 30px;
-	margin: 20px;
+	margin: 0px 20px 40px 20px;
 	color: #F4F4F4;
 }
 
